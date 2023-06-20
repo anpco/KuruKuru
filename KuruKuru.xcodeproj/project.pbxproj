@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2583BC512A39BDC700DA0CAE /* QLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2583BC502A39BDC700DA0CAE /* QLImage.swift */; };
+		2583BC532A39D26000DA0CAE /* hertaa2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2583BC522A39D26000DA0CAE /* hertaa2.gif */; };
+		2583BC552A39D26700DA0CAE /* hertaa1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2583BC542A39D26700DA0CAE /* hertaa1.gif */; };
+		2583BC582A39D3C400DA0CAE /* logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2583BC572A39D3C400DA0CAE /* logger.swift */; };
 		2588C8B52A37097600F0F0E2 /* KuruKuruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2588C8B42A37097600F0F0E2 /* KuruKuruApp.swift */; };
 		2588C8B72A37097600F0F0E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2588C8B62A37097600F0F0E2 /* ContentView.swift */; };
 		2588C8B92A37097900F0F0E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2588C8B82A37097900F0F0E2 /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2583BC502A39BDC700DA0CAE /* QLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QLImage.swift; sourceTree = "<group>"; };
+		2583BC522A39D26000DA0CAE /* hertaa2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hertaa2.gif; sourceTree = "<group>"; };
+		2583BC542A39D26700DA0CAE /* hertaa1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hertaa1.gif; sourceTree = "<group>"; };
+		2583BC572A39D3C400DA0CAE /* logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logger.swift; sourceTree = "<group>"; };
 		2588C8B12A37097600F0F0E2 /* KuruKuru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KuruKuru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2588C8B42A37097600F0F0E2 /* KuruKuruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuruKuruApp.swift; sourceTree = "<group>"; };
 		2588C8B62A37097600F0F0E2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2583BC592A39D8B300DA0CAE /* Hertaa */ = {
+			isa = PBXGroup;
+			children = (
+				2583BC542A39D26700DA0CAE /* hertaa1.gif */,
+				2583BC522A39D26000DA0CAE /* hertaa2.gif */,
+			);
+			name = Hertaa;
+			sourceTree = "<group>";
+		};
 		2588C8A82A37097600F0F0E2 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +71,9 @@
 			children = (
 				2588C8B42A37097600F0F0E2 /* KuruKuruApp.swift */,
 				2588C8B62A37097600F0F0E2 /* ContentView.swift */,
+				2583BC502A39BDC700DA0CAE /* QLImage.swift */,
+				2583BC572A39D3C400DA0CAE /* logger.swift */,
+				2583BC592A39D8B300DA0CAE /* Hertaa */,
 				2588C8B82A37097900F0F0E2 /* Assets.xcassets */,
 				2588C8BA2A37097900F0F0E2 /* KuruKuru.entitlements */,
 				2588C8BB2A37097900F0F0E2 /* Preview Content */,
@@ -85,6 +105,8 @@
 			dependencies = (
 			);
 			name = KuruKuru;
+			packageProductDependencies = (
+			);
 			productName = KuruKuru;
 			productReference = 2588C8B12A37097600F0F0E2 /* KuruKuru.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +135,8 @@
 				Base,
 			);
 			mainGroup = 2588C8A82A37097600F0F0E2;
+			packageReferences = (
+			);
 			productRefGroup = 2588C8B22A37097600F0F0E2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,7 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2588C8BD2A37097900F0F0E2 /* Preview Assets.xcassets in Resources */,
+				2583BC552A39D26700DA0CAE /* hertaa1.gif in Resources */,
 				2588C8B92A37097900F0F0E2 /* Assets.xcassets in Resources */,
+				2583BC532A39D26000DA0CAE /* hertaa2.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +166,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2588C8B72A37097600F0F0E2 /* ContentView.swift in Sources */,
+				2583BC512A39BDC700DA0CAE /* QLImage.swift in Sources */,
 				2588C8B52A37097600F0F0E2 /* KuruKuruApp.swift in Sources */,
+				2583BC582A39D3C400DA0CAE /* logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,11 +297,13 @@
 				CODE_SIGN_ENTITLEMENTS = KuruKuru/KuruKuru.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"KuruKuru/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "KuruKuru KuruKuru/Preview\\ Content";
 				DEVELOPMENT_TEAM = 6PL7ZKPRCZ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Kuru Kuru";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -307,11 +337,13 @@
 				CODE_SIGN_ENTITLEMENTS = KuruKuru/KuruKuru.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"KuruKuru/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "KuruKuru KuruKuru/Preview\\ Content";
 				DEVELOPMENT_TEAM = 6PL7ZKPRCZ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Kuru Kuru";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
